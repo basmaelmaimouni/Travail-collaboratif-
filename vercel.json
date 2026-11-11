@@ -1,26 +1,5 @@
-
 {
-  "functions": {
-    "api/*.php": {
-      "runtime": "vercel-php@0.9.0"
-    }
-  },
-  "routes": [
-    {
-      "src": "^/$",
-      "dest": "/api/index.php"
-    },
-    {
-      "src": "^/(.*\\.php)$",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "^/docs/(.*)$",
-      "dest": "/public/docs/$1"
-    },
-    {
-      "src": "^/images/(.*)$",
-      "dest": "/public/images/$1"
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/NOMAS.html" }
   ]
 }
